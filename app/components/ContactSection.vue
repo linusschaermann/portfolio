@@ -6,7 +6,7 @@ const links = ref<ButtonProps[]>([
     label: 'Mail',
     color: 'neutral',
     trailingIcon: 'i-lucide-mail',
-    to: 'mailto:linus.schaermann@outlook.com'
+    to: 'mailto:linus.schaermann@gmail.com'
 
   },
   {

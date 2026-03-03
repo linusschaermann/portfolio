@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const labels = ['Home', 'Projects', 'Research', 'Contact']
+// const labels = ['Home', 'Projects', 'Research', 'Contact']
+const labels = ['Home', 'Contact']
 const activeIndex = useState('activeIndex', () => 0)
 
 defineShortcuts({
   1: () => { activeIndex.value = 0 },
-  2: () => { activeIndex.value = 1 },
-  3: () => { activeIndex.value = 2 },
-  4: () => { activeIndex.value = 3 }
+  2: () => { activeIndex.value = 1 }
+  // 3: () => { activeIndex.value = 2 },
+  // 4: () => { activeIndex.value = 3 }
 })
 
 const open = ref(false)
@@ -36,7 +37,7 @@ const items = computed<NavigationMenuItem[]>(() =>
       <template #header="{ collapsed }">
         <div class="flex items-center justify-between gap-2 w-full">
           <h1 class="font-bold text-lg">
-            {{ collapsed ? 'LS' : 'Linus Schärmann' }}
+            {{ collapsed ? 'LS.' : 'Linus Schärmann.' }}
           </h1>
         </div>
       </template>

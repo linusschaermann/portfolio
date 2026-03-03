@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ContactSection, HomeSection, ProjectsSection, ResearchSection } from '#components'
 
-const labels = ['Home', 'Projects', 'Research', 'Contact']
+// const labels = ['Home', 'Projects', 'Research', 'Contact']
+const labels = ['Home', 'Contact']
+
 const sectionIds = labels.map(label => label.toLowerCase().replace(/\s+/g, '-'))
 const sectionComponents = {
   Home: HomeSection,
@@ -9,7 +11,9 @@ const sectionComponents = {
   Research: ResearchSection,
   Contact: ContactSection
 }
+
 const activeIndex = useState('activeIndex', () => 0)
+
 const scrollContainer = ref<HTMLElement | null>(null)
 const route = useRoute()
 const router = useRouter()
