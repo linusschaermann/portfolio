@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+}
+
+:root {
+  --ui-radius: 0.5rem;
+  --ui-primary: black;
+}
+
+.dark {
+  --ui-primary: white;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
