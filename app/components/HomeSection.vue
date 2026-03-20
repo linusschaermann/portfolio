@@ -14,7 +14,7 @@
             class="relative inline-flex size-2 scale-90 rounded-full bg-success"
           />
         </span>
-        <span class="ml-2 text-sm text-muted">Open for work (part-time)</span>
+        <span class="ml-2 text-sm text-muted">Open for work</span>
       </div>
     </template>
     <img
